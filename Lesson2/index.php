@@ -26,14 +26,12 @@ foreach($arrayOurGroup as $a){
 
 $arr = [];
 for($a = 0; $a <= 20; $a++){
-    $arr = [rand()];
+    $arr = [rand(0, 50)];
     var_dump ($arr)."\n\r";
 }
 //4.  Вывести элементы массива которые делятся на 3 и на 5 без остатка
 
-$arr2 = [];
 for($b = 0; $b < 20; $b++){
-    $arr2 = rand(0, 20);
     if ($b % 3 == 0 || $b % 5 == 0){
         print_r ($b."\n");
       }
