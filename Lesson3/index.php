@@ -14,14 +14,14 @@
 //}
 
 
-//2. Найти самое длинное слово в строке (РАЗОБРАТЬ ПОДРОБНО)
+//2. Найти самое длинное слово в строке
 //$str = "Найти самое длинное слово в строке";
 //$arrString = explode(" ", $str);
 //
 //$max = $arrString[0];
 //for ($i=0; $i < count($arrString); $i++){
-//    if(mb_strlen($arrString[$i]) >  mb_strlen($max)){//???
-//        $max = $arrString[$i];//???
+//    if(mb_strlen($arrString[$i]) >  mb_strlen($max)){
+//        $max = $arrString[$i];
 //    }
 //}
 //echo $max;
