@@ -38,9 +38,9 @@ function cut($i)
 
     if (end($i22) != end($i33)) {       //проверка на обрезанное слово
         array_pop($i33);
-        print_r(implode(' ', $i33). '<br>');
-    }  else {
-        echo 'ошибка'. '<br>';
+        print_r(implode(' ', $i33) . '<br>');
+    } else {
+        echo 'ошибка' . '<br>';
     }
 }
 
@@ -49,14 +49,18 @@ cut($stri);
 
 //3.  Написать функцию, которая будет менять порядок слов в строке на обратный
 $str = 'You can test your PHP code!';
-$str2 = 'my name Vladimir';
+
 function rev($a)
 {
-    return strrev($a) . '<br>';
+
+    $arr = explode(' ', $a);
+    $arr = array_reverse($arr);
+    $arr = implode(' ', $arr);
+    return ($arr);
+
 }
 
-echo rev($str);
-echo rev($str2);
+print_r(rev($str));
 
 //4. Написать функцию, которая вычисляет среднее арифметическое элементов массива, переданного ей в качестве аргумента.
 //Не использовать array_sum и т.д. Простым перебором через цикл
@@ -72,6 +76,7 @@ function res($x)
         $averageValue = $sum / count($x);
     }
     echo $averageValue . '<br>';
+    return $sum;
 }
 
 res($arr);
@@ -80,11 +85,15 @@ res($arr2);
 //5.  Написать функцию, которая генерирует массив случайных значений.
 // Количество элементов массива передается в качестве аргумента
 
-function randomValue($num){
+function randomValue($num)
+{
     $arr = [];
-    for($i = 0; count($arr) < $num; $i++)
+    for ($i = 0; count($arr) < $num; $i++)
         $arr[] = rand();
 
-    print_r ($arr);
+    print_r($arr);
+    return $arr;
 }
+
 randomValue(5);
+
