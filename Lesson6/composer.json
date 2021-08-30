@@ -1,0 +1,12 @@
+{
+    "name": "vagrant/project1",
+    "description": "shik_php",
+    "autoload": {
+        "psr-4": {
+            "Vagrant\\Project1\\": "log/db/",
+            "Log\\":"log/",
+            "Journal\\":"journal/"
+        }
+    },
+    "require": {}
+}
